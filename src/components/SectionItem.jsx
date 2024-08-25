@@ -32,11 +32,11 @@ export const SectionItem = ({ section, index, onDelete, onSelect, isActive, onDr
         onClick={() => onSelect(section)}
         className={`p-2 flex items-center justify-between rounded shadow cursor-pointer ${
           isDragging ? 'opacity-50' : 'opacity-100'
-        } ${isActive ? 'bg-blue-100 dark:bg-blue-600' : 'bg-white dark:bg-gray-700'}`}
+        } ${isActive ? ' bg-blue-600' : ' bg-gray-700'}`}
       >
         <div className="flex items-center">
           <FiMenu className="mr-2 cursor-move text-gray-500" />
-          <p className="text-gray-800 dark:text-gray-200">{section.title}</p>
+          <p className="text-gray-200">{section.title}</p>
         </div>
         <div className="flex items-center space-x-2">
           <button

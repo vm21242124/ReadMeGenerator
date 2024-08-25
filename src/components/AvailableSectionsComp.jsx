@@ -15,7 +15,7 @@ export const AvailableSectionsComp = ({availableSections}) => {
           <li key={index}>
             <button
               onClick={() => addSection({id:uuidv4(),title:section.title,content:section.content})}
-              className="w-full text-left p-2 bg-white dark:bg-gray-700 rounded shadow text-rose-50 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+              className="w-full text-left p-2 bg-gray-700 rounded shadow text-rose-50 hover:bg-gray-600 transition-colors"
             >
               {section.title}
             </button>
