@@ -17,7 +17,7 @@ const Drawer = () => {
     }
   }
     return (
-      <div className="flex flex-col w-64 bg-gray-800 p-4">
+      <div className="flex flex-col w-64 bg-gray-800 p-4 h-screen overflow-y-auto">
         <h2 className="text-lg font-semibold mb-4 text-white">Sections</h2>
         <SectionList />
         <h4 className="mt-6 mb-2 text-sm font-medium text-gray-300">

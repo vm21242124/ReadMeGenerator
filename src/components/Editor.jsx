@@ -34,7 +34,7 @@ import { useSectionContext } from './SectionContenxt';
   };
 
   return (
-    <div className="my-4  ">
+    <div className=" h-6/12">
       <h3 className="text-lg font-semibold mb-2">Editor</h3>
       {activeSection ? (
         <Editor
