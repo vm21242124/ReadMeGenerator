@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import { FullScreenLoader } from './components/Loader';
 
 const Drawer = lazy(() => import('./components/Drawer'));
-const Editor = lazy(() => import('./components/Editor'));
+const EditorMono = lazy(() => import('./components/Editor'));
 const Preview = lazy(() => import('./components/Preview'));
 
 const AppContent = () => {
@@ -48,7 +48,7 @@ const AppContent = () => {
       >
         Download Markdown
       </button>
-        <Editor />
+        <EditorMono />
         <Preview markdown={markdown} />
       </div>
     </div>

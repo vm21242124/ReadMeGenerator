@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import MonacoEditor from 'react-monaco-editor';
+import Editor from '@monaco-editor/react';
 import { useSectionContext } from './SectionContenxt';
 
 
- const Editor = () => {
+ const EditorMono = () => {
   const { activeSection, updateSections } = useSectionContext();
   const [code, setCode] = useState('');
 
@@ -37,10 +37,11 @@ import { useSectionContext } from './SectionContenxt';
     <div className="my-4  ">
       <h3 className="text-lg font-semibold mb-2">Editor</h3>
       {activeSection ? (
-        <MonacoEditor
+        <Editor
           width="100%"
-          height="400"
+          height="300px"
           padding="20px"
+          margin="10px"
           language="markdown"
           theme="vs-dark"
           value={code}
@@ -54,4 +55,4 @@ import { useSectionContext } from './SectionContenxt';
     </div>
   );
 };
-export default Editor
+export default EditorMono
