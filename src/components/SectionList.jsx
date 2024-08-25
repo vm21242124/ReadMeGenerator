@@ -7,7 +7,7 @@ import { SectionItem } from './SectionItem';
 
 export const SectionList = () => {
     const { selectedSections, removeSection, updateSections, setActiveSection } = useSectionContext();
-    const [activeId, setActiveId] = useState(selectedSections[0].id);
+    const [activeId, setActiveId] = useState(null);
   
     const handleDelete = (id) => {
       removeSection(id);
