@@ -44,7 +44,7 @@ export const availableSections = [
     {
       id: 4,
       title: 'Authors',
-      content: '## Authors\n\n- [@octokatherine](https://www.github.com/octokatherine)\n\n'
+      content: '## Authors\n\n- [@vm21242124](https://www.github.com/vm21242124)\n\n'
     },
     {
       id: 5,
